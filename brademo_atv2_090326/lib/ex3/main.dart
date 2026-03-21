@@ -25,6 +25,8 @@ class NavItem extends StatelessWidget {
 
 class Square extends StatelessWidget {
   final Color color;
+  final Color iconColor;
+  final Color textColor;
   final String text;
   final IconData icon;
   final double width;
@@ -37,6 +39,8 @@ class Square extends StatelessWidget {
     required this.icon,
     required this.width,
     required this.height,
+    required this.iconColor,
+    required this.textColor,
   });
 
   @override
@@ -49,8 +53,8 @@ class Square extends StatelessWidget {
       alignment: Alignment.topLeft,
       child: Row(
         children: [
-          Text(text, style: TextStyle(fontSize: 10, color: Colors.white)),
-          Icon(icon, color: Colors.pink.shade600, size: 30),
+          Text(text, style: TextStyle(fontSize: 10, color: textColor)),
+          Icon(icon, color: iconColor, size: 30),
         ],
       ),
     );
@@ -82,6 +86,8 @@ class MainApp extends StatelessWidget {
                       color: Colors.amber.shade600,
                       text: 'Âmbar',
                       icon: Icons.air,
+                      iconColor: Colors.white,
+                      textColor: Colors.white,
                       width: 200,
                       height: 200,
                     ),
@@ -92,6 +98,8 @@ class MainApp extends StatelessWidget {
                         color: Colors.green.shade600,
                         text: 'Verde',
                         icon: Icons.eco,
+                        iconColor: Colors.yellow.shade600,
+                        textColor: Colors.yellow.shade600,
                         width: 200,
                         height: 200,
                       ),
@@ -103,6 +111,8 @@ class MainApp extends StatelessWidget {
                         color: Colors.purple.shade600,
                         text: 'Roxo',
                         icon: Icons.star,
+                        iconColor: Colors.green.shade600,
+                        textColor: Colors.green.shade600,
                         width: 200,
                         height: 200,
                       ),
