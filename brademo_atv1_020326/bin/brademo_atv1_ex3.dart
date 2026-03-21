@@ -1,4 +1,4 @@
-import '../lib/brademo_atv1_ex3.dart';
+import 'package:brademo_atv1_ex1/brademo_atv1_ex3.dart';
 
 void main() {
   var l1 = Laptop(id: 1, nome: 'Dell Inspiron', ram: 8, clockCpu: 3.2);

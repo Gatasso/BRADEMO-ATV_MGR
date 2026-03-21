@@ -27,7 +27,7 @@ void main() {
 
   // usando notação cascade para ajustar nomes
   for (var house in houses) {
-    house..name = '${house.name} (Cadastrada)';
+    house.name = '${house.name} (Cadastrada)';
   }
 
   // imprimir detalhes

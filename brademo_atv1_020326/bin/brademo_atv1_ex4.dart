@@ -1,4 +1,4 @@
-import '../lib/brademo_atv1_ex4.dart';
+import 'package:brademo_atv1_ex1/brademo_atv1_ex4.dart';
 
 void main() {
   final lap1 = Laptop.navegador();
