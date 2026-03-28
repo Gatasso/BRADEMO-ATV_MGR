@@ -13,12 +13,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       home: Scaffold(
         body: Center(
-          child: Container(
-            width: 150,
-            height: 150,
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              border: Border.all(color: Colors.black, width: 2),
+          child: Theme(
+            data: ThemeData(scaffoldBackgroundColor: Colors.yellow),
+            child: Container(
+              width: 150,
+              height: 150,
+              decoration: BoxDecoration(
+                color: Colors.yellow,
+                border: Border.all(color: Colors.black, width: 2),
+              ),
             ),
           ),
         ),
