@@ -25,10 +25,12 @@ class _LoginFormState extends State<LoginForm> {
 
   void _submit() {
     if (_formKey.currentState?.validate() ?? false) {
-      widget.onSubmit(Login(
-        email: _emailController.text.trim(),
-        password: _passwordController.text,
-      ));
+      widget.onSubmit(
+        Login(
+          email: _emailController.text.trim(),
+          password: _passwordController.text,
+        ),
+      );
     }
   }
 
@@ -46,7 +48,8 @@ class _LoginFormState extends State<LoginForm> {
               labelText: 'Email',
               border: OutlineInputBorder(),
             ),
-            validator: (value) => (value == null || value.isEmpty) ? 'Informe o email' : null,
+            validator: (value) =>
+                (value == null || value.isEmpty) ? 'Informe o email' : null,
           ),
           const SizedBox(height: 12),
           TextFormField(
@@ -56,7 +59,8 @@ class _LoginFormState extends State<LoginForm> {
               labelText: 'Password',
               border: OutlineInputBorder(),
             ),
-            validator: (value) => (value == null || value.isEmpty) ? 'Informe a senha' : null,
+            validator: (value) =>
+                (value == null || value.isEmpty) ? 'Informe a senha' : null,
           ),
           const SizedBox(height: 12),
           Align(
